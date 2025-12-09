@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mood.css') }}" />
+</head>
+<body>
+    
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="container">
+        <h1>Mood Melody 🎭🎶</h1>
+        <h2>Express Your Thoughts</h2>
+        <textarea id="textInput" placeholder="Type your thoughts here..."></textarea>
+        <br />
+        <button onclick="analyzeMood()">Analyze Mood</button>
+        
+        <h3>Result:</h3>
+        <p id="result"></p>
+        
+<div class="buttons-container">
+    <a href="https://moodmelodychatbot.lovable.app" target="_blank" style="text-decoration: none;">
+        <button id="chat">Chat with me</button>
+    </a>
+
+    <a href="https://subhom-ghosh.github.io/MoodMelody_Song/" target="_blank" style="text-decoration: none;">
+        <button id="song">Enerzize Yourself</button>
+    </a>
+</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/mood.js') }}"></script>
+</body>
+</html>
